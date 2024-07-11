@@ -6,6 +6,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { GifsModule } from './gifs/gifs.module';
 import { SharedModule } from './shared/shared.module';
+import { environment } from '../environment/environment';
 
 @NgModule({
   declarations: [AppComponent],
@@ -19,4 +20,10 @@ import { SharedModule } from './shared/shared.module';
   providers: [],
   bootstrap: [AppComponent],
 })
-export class AppModule {}
+export class AppModule {
+  constructor() {
+    console.log({
+      production: environment.production,
+    });
+  }
+}
