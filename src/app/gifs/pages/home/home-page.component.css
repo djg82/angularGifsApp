@@ -1,0 +1,14 @@
+
+#homePage {
+  display: flex;
+  flex-direction: column;
+  margin:0;
+  height: 100vh;
+}
+
+
+#list {
+  flex: 1;
+  overflow-y: auto;
+  padding-top: 10px;
+}
